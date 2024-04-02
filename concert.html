@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/script.js" defer></script>
+    <title>Concerts</title>
+   
+</head>
+
+<nav class="navbar dark-mode" role="navigation">
+    <a href="index.html"><img src="/images/logo-universal.png" id="logo" ></a>
+    <ul class="navbar__links">
+        <li class="navbar__link second"><a href="/artistes.html">Nos artistes</a></li>
+        <li class="navbar__link third"><a href="/concert.html">Concert</a></li>
+        <li class="navbar__link four"><a href="/newsletter.html">Newsletter</a></li>
+        <li class="navbar__link four"><a href="https://universalmusic.store/" target="_blank">Boutique</a></li>
+        <li class="navbar__link fifth"><a href="/contact.html">Contact</a></li>
+    </ul>
+    <button class="burger">
+        <span class="bar"></span>
+    </button>
+</nav>
+
+
+<h5>Concerts</h5>
+<body>
+    <div class="concert_page">
+    <div class="concert" data-date="2024-01-10">
+        <p>Lieu: Vélodrome</p>
+        <p>20h00</p>
+        <a href="./folio-aya.html"><img src="/images/aya.jpg" width="200" height="200"></a>
+    </div>
+
+    <div class="concert" data-date="2024-01-15">
+        <p>Lieu: La Bellevilloise</p>
+        <p>19h30</p>
+        <a href="./folio-jul.html"><img src="/images/jul.jpg" width="200" height="200"></a>
+    </div>
+
+    <div class="concert" data-date="2024-01-22">
+        <p>Lieu: Bercy</p>
+        <p>18h45</p>
+        <a href="./folio-booba.html"><img src="/images/booba.jpg" width="200" height="200"></a>
+    </div>
+
+    <div class="concert" data-date="2024-01-01">
+        <p>Lieu: Olympia</p>
+        <p>19h30</p>
+        <a href="./folio-ronisia.html"><img src="/images/ronisia.jpg" width="200" height="200"></a>
+    </div>
+
+    <div class="concert" data-date="2024-01-18">
+        <p>Lieu : Stade De France</p>
+        <p>19h30</p>
+        <a href="./folio-jul.html"><img src="/images/jul.jpg" width="200" height="200"></a>
+    </div>
+
+    <div class="concert" data-date="2024-01-31">
+        <p>Lieu: Amphithéâtre Lompadosa</p>
+        <p>19h30</p>
+        <a href="./folio-booba.html"><img src="/images/booba.jpg" width="200" height="200"></a>
+    </div>
+
+</div>
+
+    <h5>Calendrier des Dates</h5>
+
+    <table id="calendar">
+        <tr>
+            <th>Lun</th>
+            <th>Mar</th>
+            <th>Mer</th>
+            <th>Jeu</th>
+            <th>Ven</th>
+            <th>Sam</th>
+            <th>Dim</th>
+        </tr>
+        <tr>
+            <td onclick="afficherEvenements('2024-01-01')">1</td>
+            <td onclick="afficherEvenements('2024-01-02')">2</td>
+            <td onclick="afficherEvenements('2024-01-03')">3</td>
+            <td onclick="afficherEvenements('2024-01-04')">4</td>
+            <td onclick="afficherEvenements('2024-01-05')">5</td>
+            <td onclick="afficherEvenements('2024-01-06')">6</td>
+            <td onclick="afficherEvenements('2024-01-07')">7</td>
+        </tr>
+        <tr>
+            <td onclick="afficherEvenements('2024-01-08')">8</td>
+            <td onclick="afficherEvenements('2024-01-09')">9</td>
+            <td onclick="afficherEvenements('2024-01-10')">10</td>
+            <td onclick="afficherEvenements('2024-01-11')">11</td>
+            <td onclick="afficherEvenements('2024-01-12')">12</td>
+            <td onclick="afficherEvenements('2024-01-13')">13</td>
+            <td onclick="afficherEvenements('2024-01-14')">14</td>
+        </tr>
+        <tr>
+            <td onclick="afficherEvenements('2024-01-15')">15</td>
+            <td onclick="afficherEvenements('2024-01-16')">16</td>
+            <td onclick="afficherEvenements('2024-01-17')">17</td>
+            <td onclick="afficherEvenements('2024-01-18')">18</td>
+            <td onclick="afficherEvenements('2024-01-19')">19</td>
+            <td onclick="afficherEvenements('2024-01-20')">20</td>
+            <td onclick="afficherEvenements('2024-01-21')">21</td>
+        </tr>
+        <tr>
+            <td onclick="afficherEvenements('2024-01-22')">22</td>
+            <td onclick="afficherEvenements('2024-01-23')">23</td>
+            <td onclick="afficherEvenements('2024-01-24')">24</td>
+            <td onclick="afficherEvenements('2024-01-25')">25</td>
+            <td onclick="afficherEvenements('2024-01-26')">26</td>
+            <td onclick="afficherEvenements('2024-01-27')">27</td>
+            <td onclick="afficherEvenements('2024-01-28')">28</td>
+        </tr>
+        <tr>
+            <td onclick="afficherEvenements('2024-01-29')">29</td>
+            <td onclick="afficherEvenements('2024-01-30')">30</td>
+            <td onclick="afficherEvenements('2024-01-31')">31</td>
+        </tr>
+    </table>
+
+    <div id="message" style="color: red; display: none;">Pas de concert disponible</div>
+
+</body>
+<footer>
+    <p>© Copyright 2021 Universal Music Group N.V.</p>
+    <p>Code de conduite Universal Music Group</p>
+    <p>Politique de confidentialité</p>
+    <p>Mentions légales</p>
+    <div class="logo">
+        <p>Retrouvez-nous sur :
+    </div>
+      <a href="https://twitter.com/UMusicFrance" class="social-link" target="_blank">
+        <img src="images/twitter-logo.png" alt="Twitter Logo" class="social-logo">
+      </a>
+      <a href="https://www.instagram.com/universalmusicfrance/?hl=fr" class="social-link" target="_blank">
+        <img src="images/instagram-logo.png" alt="Instagram Logo" class="social-logo">
+      </a>
+    </p>
+  </footer>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    
+</head>
+<body>
+
+    <nav class="navbar dark-mode" role="navigation">
+        <a href="index.html"><img src="/images/logo-universal.png" id="logo" ></a>
+        <ul class="navbar__links">
+            <li class="navbar__link second"><a href="/artistes.html">Nos artistes</a></li>
+            <li class="navbar__link third"><a href="/concert.html">Concert</a></li>
+            <li class="navbar__link four"><a href="/newsletter.html">Newsletter</a></li>
+            <li class="navbar__link four"><a href="https://universalmusic.store/" target="_blank">Boutique</a></li>
+            <li class="navbar__link fifth"><a href="/contact.html">Contact</a></li>
+        </ul>
+        <button class="burger">
+            <span class="bar"></span>
+        </button>
+    </nav>
+    <main>
+    <h6>Contactez-nous</h6>
+
+    <form action="#" method="post" id="contactForm">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <label for="dateNaissance">Date de naissance :</label>
+        <input type="date" id="dateNaissance" name="dateNaissance" required>
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <div id="informations">
+        <h2>Message</h2>
+        <p id="nomAffiche"></p>
+        <p id="prenomAffiche"></p>
+        <p id="dateNaissanceAffiche"></p>
+        <p id="messageAffiche"></p>
+    </div>
+</main>
+
+</body>
+<footer>
+    <p>© Copyright 2021 Universal Music Group N.V.</p>
+    <p>Code de conduite Universal Music Group</p>
+    <p>Politique de confidentialité</p>
+    <p>Mentions légales</p>
+    <div class="logo">
+        <p>Retrouvez-nous sur :
+    </div>
+      <a href="https://twitter.com/UMusicFrance" class="social-link" target="_blank">
+        <img src="images/twitter-logo.png" alt="Twitter Logo" class="social-logo">
+      </a>
+      <a href="https://www.instagram.com/universalmusicfrance/?hl=fr" class="social-link" target="_blank">
+        <img src="images/instagram-logo.png" alt="Instagram Logo" class="social-logo">
+      </a>
+    </p>
+  </footer>
+</html>
